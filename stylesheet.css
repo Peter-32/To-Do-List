@@ -1,0 +1,279 @@
+// COLORS:
+// 620C67 Strips
+// 5EA032 Borders
+// 425C81 Some of the text
+// D59859 Other parts of the text
+// D3D1D2 Grey to contain the lists
+// FCFAFB The main white background
+
+
+/*////////////////////////////////////////////////////////
+// Any/All Elements */
+html {
+  min-height:100%;
+}
+body {
+  background-color: #D3D1D2;
+  height: 100%;
+  font-family: cursive;
+}
+
+.textA {
+  color: #425C81;
+}
+
+.textB {
+  color: #D59859;
+}
+
+/*////////////////////////////////////////////////////////
+// Titles and note */
+#title {
+  color: #425C81;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  z-index:2;
+
+}
+
+.subTitle {
+  font-size: 32px;
+  position: relative;
+  display: block;
+  margin-bottom: -30px;
+  top: -30px;
+  left: 50px;
+  z-index:2;
+}
+
+#note {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: 240px;
+  right: 18px;
+  list-style-type: none;
+}
+
+/*////////////////////////////////////////////////////////
+// To Do Tasks - Left-Hand Box */
+#toDoListContainer {
+  background-color: #FCFAFB;
+  color: #425C81;
+  width: 30%;
+  height: 70%;
+  margin-top: 5%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left: 250px;
+  overflow:scroll;
+  z-index:2;
+}
+
+#textInputToDoList {
+  float: left;
+  margin: 4px 4px 4px 4px;
+}
+
+#toDoList {
+  overflow: scroll;
+  list-style-type: none;
+}
+
+.toDoListItem {
+  font-size: 32px;
+}
+
+/*////////////////////////////////////////////////////////
+// Completed Tasks - Right-Hand Box */
+#completedListContainer {
+  background-color: #FCFAFB;  
+  color: #D59859;
+  width: 30%;
+  height: 70%;
+  margin-top: 5%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:250px;
+  overflow:scroll;
+  z-index:2;
+}
+
+#completedList {
+  overflow:scroll;
+  list-style-type: none;
+}
+
+.completedListItem {
+  font-size: 32px;
+}
+
+/*////////////////////////////////////////////////////////
+// Top Strip and Buttons */
+.topStrip {
+  background-color: #620C67;
+  color: #425C81;
+  width: 15%;
+  height: 10%;
+  margin-top: 5%;
+  position:absolute;
+  top:50px;
+  right:42.5%;
+  left: 42.5%;
+  overflow:hidden;
+  z-index:-1;
+}
+
+#saveTasksButton {
+  font-family: cursive;
+  width: 7%;
+  height: 4%;
+  margin-top: 5%;
+  position:absolute;
+  top:70px;
+  right:42.8%;
+  left: 42.8%;
+  overflow:hidden;
+  z-index:-0;
+}
+
+#loadSavedFileButton {
+  font-family: cursive;
+  width: 7%;
+  height: 4%;
+  margin-top: 5%;
+  position:absolute;
+  top:70px;
+  right:50.2%;
+  left: 50.2%;
+  overflow:hidden;
+  z-index:-0;
+}
+
+/*////////////////////////////////////////////////////////
+// Right Strip */
+.rightStrip {
+  background-color: #620C67;
+  color: #425C81;
+  width: 80px;
+  height: 70%;
+  margin-top: 5%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:110px;
+  overflow:hidden;
+  z-index:-1;
+}
+
+/*////////////////////////////////////////////////////////
+// Bottom Strip and Buttons */
+.bottomStrip {
+  background-color: #620C67;
+  color: #425C81;
+  width: 15%;
+  height: 10%;
+  margin-top: 5%;
+  position:absolute;
+  bottom:110px;
+  right:42.5%;
+  left: 42.5%;
+  overflow:hidden;
+  z-index:-1;
+}
+
+#clearToDoListButton {
+  font-family: cursive;
+  width: 7%;
+  height: 4%;
+  margin-top: 5%;
+  position:absolute;
+  bottom:130px;
+  right:42.8%;
+  left: 42.8%;
+  overflow:hidden;
+  z-index:-0;
+}
+
+#clearCompletedListButton {
+  font-family: cursive;
+  width: 7%;
+  height: 4%;
+  margin-top: 5%;
+  position:absolute;
+  bottom:130px;
+  right:50.2%;
+  left: 50.2%;
+  overflow:hidden;
+  z-index:-0;
+}
+
+/*////////////////////////////////////////////////////////
+// Left Strip */
+.leftStrip {
+  background-color: #620C67;
+  color: #425C81;
+  width: 80px;
+  height: 70%;
+  margin-top: 5%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:110px;
+  overflow:hidden;
+  z-index:-1;
+}
+
+/*////////////////////////////////////////////////////////
+// The four borders */
+.borderOfPageTop {
+  background-color: #5EA032;
+  color: #D59859;
+  height: 100px;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+}
+
+.borderOfPageRight {
+  background-color: #5EA032;
+  color: #D59859;
+  width: 100px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+}
+
+.borderOfPageBottom {
+  background-color: #5EA032;
+  color: #D59859;
+  height: 90px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+}
+
+.borderOfPageLeft {
+  background-color: #5EA032;
+  color: #D59859;
+  width: 100px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+}

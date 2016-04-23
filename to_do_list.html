@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>To Do List</title>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	</head>
+	<body>
+		<!-- Title and Note -->
+		<h1 id="title">*****</h1>
+		<ul class="textA" id="note">
+		  <li>Note:</li>
+		  <li>Zoom of 75% is optimal</li>
+		  <li>If a task is completed, then click on it.</li>
+		</ul>
+
+		<!-- To Do Tasks - Left-Hand Box -->
+		<div id="toDoListContainer">
+		  <h4 class="textA subTitle">To Do List:</h4>
+		  <textarea id="textInputToDoList" rows="1" cols="95" name="textInputToDoList" placeholder="Write new task here."></textarea>
+		  <ul id="toDoList">
+		  </ul>
+		</div>
+
+		<!-- Completed Tasks - Right-Hand Box -->
+		<div id="completedListContainer">
+		  <h4 class="textA subTitle">Completed Tasks:</h4>
+		  <ul id="completedList">
+		  </ul>
+		</div>
+
+		<!-- Buttons -->
+		<form name="buttons">
+		  <button type="button" id="clearToDoListButton" name="clearToDoListButton">Clear To Do List</button>
+		  <button type="button" id="clearCompletedListButton" name="clearCompletedListButton">Clear Completed List</button>
+		  <button type="button" id="saveTasksButton" name="saveTasksButton">Save Tasks</button>
+		  <button type="button" id="loadSavedFileButton" name="loadSavedFileButton">Load Saved File</button>
+		</form>
+
+		<!-- The green and purple strips and borders -->
+		<div class="topStrip"></div>
+		<div class="rightStrip"></div>
+		<div class="bottomStrip"></div>
+		<div class="leftStrip"></div>
+		<div class="borderOfPageTop"></div>
+		<div class="borderOfPageRight"></div>
+		<div class="borderOfPageBottom"></div>
+		<div class="borderOfPageLeft"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
