@@ -3,12 +3,6 @@ To Do List
 
 To Do List will store your tasks  and keep track of your completed tasks.
 
-Features
-------------
-
-- Save and load buttons that work between visits.
-- Clearing your to do list or completed list.
-
 Instructions
 ----------------
 
