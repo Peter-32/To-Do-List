@@ -1,7 +1,10 @@
 To Do List
 ========
 
-To Do List will store your tasks  and keep track of your completed tasks.
+To Do List is a JavaScript application that will store your tasks and keep track of your completed tasks.
+
+This is a link to my Code Pen profile:
+https://codepen.io/peterm/
 
 Instructions
 ----------------
